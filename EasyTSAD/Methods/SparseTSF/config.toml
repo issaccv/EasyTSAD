@@ -1,0 +1,53 @@
+[Data_Params]
+preprocess = "z-score"
+diff_order = 0
+
+[Model_Params.Default]
+seq_len = 720
+pred_len = 720
+enc_in = 1
+period_len = 120
+
+batch_size = 256
+epochs = 100
+lr = 2e-2
+
+[Model_Params.Yahoo]
+seq_len = 96
+pred_len = 96
+enc_in = 1
+period_len = 24
+
+batch_size = 256
+epochs = 100
+lr = 2e-2
+
+[Model_Params.NAB]
+seq_len = 96
+pred_len = 96
+enc_in = 1
+period_len = 12
+
+batch_size = 256
+epochs = 100
+lr = 2e-2
+
+[Model_Params.WSD]
+seq_len = 180
+pred_len = 180
+enc_in = 1
+period_len = 60
+
+batch_size = 256
+epochs = 100
+lr = 2e-2
+
+[Model_Params.AIOPS]
+seq_len = 180
+pred_len = 180
+enc_in = 1
+period_len = 60
+
+batch_size = 256
+epochs = 100
+lr = 2e-2
