@@ -1,0 +1,11 @@
+[Data_Params]
+preprocess = "z-score"
+diff_order = 1
+
+# if your want to specify the model params for one Dataset
+[Model_Params.Default]
+window = 96
+order = 4
+batch_size = 1024
+epochs = 100
+lr = 0.01
