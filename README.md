@@ -1,4 +1,4 @@
-# Code for ICDE 2025
+# Code for WWW 2025
 
 Create environment:
 
@@ -12,5 +12,3 @@ Reproduce the results:
 ```sh
 python run.py
 ```
-
-Datasets can be found at [here](https://github.com/CSTCloudOps/datasets)
