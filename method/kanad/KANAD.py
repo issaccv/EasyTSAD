@@ -16,7 +16,7 @@ from EasyTSAD.DataFactory.TorchDataSet.PredictWindow import UTSOneByOneDataset
 
 
 # make it interpretable
-class FANModel(nn.Module):
+class KANADModel(nn.Module):
     def __init__(
         self, window: int, order: int, stacks: int | None = None, *args, **kwargs
     ) -> None:
@@ -81,7 +81,7 @@ class FANModel(nn.Module):
         return result
 
 
-class FAN(BaseMethod):
+class KANAD(BaseMethod):
     def __init__(self, params: dict) -> None:
         super().__init__()
         self.__anomaly_score = None
@@ -99,7 +99,7 @@ class FAN(BaseMethod):
         self.batch_size = params["batch_size"]
         self.window = params["window"]
         self.debug = params.get("debug", False)
-        self.model = FANModel(**params).to(self.device)
+        self.model = KANADModel(**params).to(self.device)
 
         self.epochs = params["epochs"]
         learning_rate = params["lr"]

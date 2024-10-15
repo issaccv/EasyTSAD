@@ -1,4 +1,3 @@
-from typing import Dict
 import numpy as np
 from EasyTSAD.Controller import TSADController
 
@@ -27,13 +26,13 @@ if __name__ == "__main__":
     # Specifying methods and training schemas
     
     training_schema = "naive"
-    method = "FAN"  # string of your algo class
+    method = "KANAD"  # string of your algo class
     
     # run models
     gctrl.run_exps(
         method=method,
         training_schema=training_schema,
-        cfg_path="method/fan/config.toml"
+        cfg_path="method/kanad/config.toml"
     )
        
         
