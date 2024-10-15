@@ -72,9 +72,7 @@ class KANADModel(nn.Module):
     ) -> th.Tensor:
         d = len(period) if isinstance(period, list) else period
         pl = period if isinstance(period, list) else [i for i in range(1, period + 1)]
-        # 初始化结果tensor
         result = th.empty(d, window, dtype=th.float32)
-        # 为每个周期生成对应的cosine序列
         for i, p in enumerate(pl):
             t = th.arange(window, dtype=th.float32) / p * 2 * th.pi
             result[i, :] = th.cos(t)
@@ -273,5 +271,3 @@ class KANAD(BaseMethod):
         )
         with open(save_file, "w") as f:
             f.write(str(model_stats))
-        # pass
-        # breakpoint()
