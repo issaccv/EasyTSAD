@@ -1,4 +1,4 @@
-# Code for WWW 2025
+# Code for ICML 2025
 
 Create environment:
 
