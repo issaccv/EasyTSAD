@@ -13,7 +13,6 @@ git clone https://github.com/CSTCloudOps/datasets
 
 For how to configure conda-forge channel, please refer to [this link](https://conda-forge.org/docs/user/introduction/#how-can-i-install-packages-from-conda-forge).
 
-```sh
 
 Create environment:
 
