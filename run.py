@@ -20,11 +20,9 @@ if __name__ == "__main__":
         datasets=datasets,
     )
     
-    """============= Impletment your algo. ============="""
-    from method.fan import FAN
     """============= Run your algo. ============="""
     # Specifying methods and training schemas
-    
+    from method.kanad import KANAD
     training_schema = "naive"
     method = "KANAD"  # string of your algo class
     
