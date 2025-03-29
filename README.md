@@ -11,7 +11,7 @@ git clone https://github.com/CSTCloudOps/datasets
 
 # Option 1: Use conda and conda-forge channel
 
-For how to configure conda-forge channel, please refer to [this link](https://conda-forge.org/docs/user/introduction/#how-can-i-install-packages-from-conda-forge).
+For how to config conda-forge channel, please refer to [this link](https://conda-forge.org/docs/user/introduction/#how-can-i-install-packages-from-conda-forge).
 
 
 Create environment:
